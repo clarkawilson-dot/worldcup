@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 10px 25px;
+  background: #004aad;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin: 6px 0 10px;
+}
+
+.city-nav {
+  margin-top: 8px;
+}
+
+.city-nav select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Filters */
+
+.filters {
+  margin: 15px auto 0;
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  align-items: flex-start;
+}
+
+.filter-group label {
+  margin-bottom: 3px;
+}
+
+.filter-group select,
+.filter-group input {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-width: 110px;
+}
+
+/* Hero */
+
+.hero {
+  background: #cce0ff;
+  text-align: center;
+  padding: 40px 15px;
+}
+
+.hero h2 {
+  margin-top: 0;
+}
+
+/* Listings */
+
+.listings {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 15px 50px;
+}
+
+#lodging-container p {
+  margin-top: 0;
+}
+
+.lodging-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.lodging-image {
+  width: 160px;
+  height: 110px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.lodging-details {
+  flex: 1;
+}
+
+.lodging-details h3 {
+  margin: 0 0 5px;
+}
+
+.lodging-meta {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.lodging-meta span {
+  margin-right: 12px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+}
+  
+/* Responsive */
+
+@media (max-width: 700px) {
+  .lodging-card {
+    flex-direction: column;
+  }
+
+  .lodging-image {
+    width: 100%;
+    height: 180px;
+  }
+
+  .filters {
+    justify-content: flex-start;
+    padding: 0 10px;
+  }
+}
