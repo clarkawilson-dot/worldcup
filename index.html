@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup Lodging</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>World Cup Lodging</h1>
+    <p>Your home base for the beautiful game.</p>
+
+    <!-- City Selection Drop-Down -->
+    <nav class="city-nav">
+      <label for="host-city">Select a Host City: </label>
+      <select id="host-city">
+        <option value="">-- Select a city --</option>
+        <option value="Atlanta">Atlanta</option>
+        <option value="Boston">Boston</option>
+        <option value="Dallas">Dallas</option>
+        <option value="Houston">Houston</option>
+        <option value="Kansas City">Kansas City</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Miami">Miami</option>
+        <option value="New York">New York / New Jersey</option>
+        <option value="Philadelphia">Philadelphia</option>
+        <option value="San Francisco">San Francisco Bay Area</option>
+        <option value="Seattle">Seattle</option>
+        <option value="Toronto">Toronto</option>
+        <option value="Vancouver">Vancouver</option>
+        <option value="Mexico City">Mexico City</option>
+        <option value="Guadalajara">Guadalajara</option>
+        <option value="Monterrey">Monterrey</option>
+      </select>
+    </nav>
+
+    <!-- Filters -->
+    <div class="filters">
+      <div class="filter-group">
+        <label for="type-filter">Type</label>
+        <select id="type-filter">
+          <option value="">All</option>
+          <option value="Hotel">Hotel</option>
+          <option value="Rental">Rental</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="guests-filter">Guests</label>
+        <select id="guests-filter">
+          <option value="">Any</option>
+          <option value="1">1+</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+          <option value="5">5+</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="min-price">Min Price ($)</label>
+        <input type="number" id="min-price" placeholder="0">
+      </div>
+
+      <div class="filter-group">
+        <label for="max-price">Max Price ($)</label>
+        <input type="number" id="max-price" placeholder="500">
+      </div>
+
+      <div class="filter-group">
+        <label for="max-distance">Max Distance (min)</label>
+        <input type="number" id="max-distance" placeholder="30">
+      </div>
+
+      <div class="filter-group">
+        <label for="sort-by">Sort By</label>
+        <select id="sort-by">
+          <option value="">None</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="distance-asc">Distance: Closest First</option>
+          <option value="distance-desc">Distance: Farthest First</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Find Your Perfect Stay for the World Cup</h2>
+    <p>Choose your host city, then filter by price, guests, and distance from the stadium.</p>
+  </section>
+
+  <!-- Listings Section -->
+  <section class="listings">
+    <h2>Available Lodging Options</h2>
+    <div id="lodging-container">
+      <p>Please select a city to see available properties.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 World Cup Lodging. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
